@@ -53,3 +53,20 @@ Workflow final:
 ![](img/1_4.png)
 
 ## Excersises 2 - Hadoop
+
+## Setup Hive Table
+1. Ubah tiap tiap DB table creator dan DB table loader sehingga membuat tabel \[nrp\]_nama_tabel
+2. execute
+
+Workflow final:
+![](img/2_0.png)  
+
+## Hive Modelling
+1. Hilangkan SQLite Connector
+2. Tambahkan Create Local Big data environment, sambungkan ke table selector
+3. execute
+
+Workflow final :
+![](img/2_1.png)
+
+##
