@@ -69,4 +69,14 @@ Workflow final:
 Workflow final :
 ![](img/2_1.png)
 
-##
+## Hive WritetoDB
+1. Ubah tabel di tabel selector menjadi \[nrp\]_ss13pme
+2. Tambahkan DB table creator, sambungkan ke koneksi hive lalu kinfigurasi untuk membuat tabel dengan nama \[nrp\]_newTable
+3. Tambahkan create temp dir
+4. Tambahkan String Manipulation
+5. Tambahkan DB Loader, koneksikan ke DB Table creator, concatenate, dan koneksi hive.
+6. konfigurasikan DB Loader agar nama table menjadi \[nrp\]_newTable
+7. Execute
+
+Workflow final:
+![](img/2.3.png)
