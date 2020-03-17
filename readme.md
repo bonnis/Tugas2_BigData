@@ -34,3 +34,22 @@ Worfklow final :
 ![](img/1_2.png)  
 
 ### Modelling
+1. Tambahkan Decision Tree Learner dan sambungkan ke number to string.
+2. Jalankan decision tree learner
+3. Tambahkan Decision Tree predictor dan sambungkan interface berbentuk segitiga ke DB Reader bagian bawah dan satunya lagi ke decision tree learner
+4. Konfigurasi prediction column name menjadi cow(agar ter append)
+
+Workflow final:
+![](img/1_3.png)  
+
+### Writing to DB
+1. Tambahkan DB Connection Table Writer dan sambungkan ke DB table selector.
+2. Konfigurasikan tabel baru menjadi <nama tabel\>_original untuk disimpan sebagai backup 
+3. Tambahkan DB Writer yang akan menwrite model decision tree
+4. Tambahkan DB Update yang akan mengupdate row yang sesuai setelah di predict nilai COW nya
+5. Tambahakn row filter untuk melihat update status dari DB update, memastikan jalannya update berhasil
+
+Workflow final:
+![](img/1_4.png)
+
+## Excersises 2 - Hadoop
